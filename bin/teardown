@@ -6,6 +6,3 @@ source $OPENSHIFT_CARTRIDGE_SDK_BASH
 # Detect primary cartrigde type
 
 PRIMARY_CART=$(ruby_sdk "primary_cartridge_manifest['Name']")
-
-mv ${OPENSHIFT_NEWRELIC_DIR}JAVA_OPTS_EXT.bak ${OPENSHIFT_HOMEDIR}.env/user_vars/JAVA_OPTS_EXT
-
