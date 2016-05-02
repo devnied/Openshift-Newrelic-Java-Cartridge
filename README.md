@@ -22,7 +22,7 @@ Install
   rhc cartridge-add -a <your_app_name> \
     -e OPENSHIFT_NEWRELIC_LICENSE_KEY=<your_new_relic_key> \
     -c https://raw.githubusercontent.com/devnied/Openshift-Newrelic-Java-Cartridge/master/metadata/manifest.yml
-  rhc env-set JAVA_OPTS_EXT="-javaagent:${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.jar" -a <your_app_name>
+  rhc env-set JAVA_OPTS_EXT="-javaagent:~/newrelic-agent/newrelic/newrelic.jar" -a <your_app_name>
 ```
 
 - Restart your application.
