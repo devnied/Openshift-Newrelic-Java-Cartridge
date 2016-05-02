@@ -4,7 +4,7 @@ Cartridge-Short-Name: NEWRELIC
 Cartridge-Version: '1.0.0'
 Compatible-Versions:
   - '1.0.0'
-Cartridge-Vendor: waldnzwrld
+Cartridge-Vendor: devnied
 Display-Name: New Relic Agent
 Description: The New Relic client connects to your New Relic account and publish
   metrics for your application.
