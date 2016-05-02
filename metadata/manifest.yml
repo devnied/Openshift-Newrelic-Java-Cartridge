@@ -8,7 +8,7 @@ Cartridge-Vendor: waldnzwrld
 Display-Name: New Relic Agent
 Description: The New Relic client connects to your New Relic account and publish
   metrics for your application.
-Version: '3.20.0'
+Version: '3.28.0'
 License: New Relic
 License-Url: https://docs.newrelic.com/docs/licenses/licenses
 Vendor: New Relic
@@ -21,7 +21,7 @@ Cart-Data:
     Type: environment
     Description: "New Relic license key."
 Website: https://docs.newrelic.com/docs/release-notes/agent-release-notes/java-release-notes
-Source-Url: https://github.com/waldnzwrld/Openshift-Newrelic-Java-Cartridge.git
+Source-Url: https://github.com/devnied/Openshift-Newrelic-Java-Cartridge.git
 Help-Topics:
   Developer Center: https://docs.newrelic.com/docs/release-notes/agent-release-notes/java-release-notes
 Provides:

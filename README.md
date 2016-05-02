@@ -21,7 +21,8 @@ Install
 ```
   rhc cartridge-add -a <your_app_name> \
     -e OPENSHIFT_NEWRELIC_LICENSE_KEY=<your_new_relic_key> \
-    -c https://raw.githubusercontent.com/waldnzwrld/Openshift-Newrelic-Java-Cartridge/master/metadata/manifest.yml
+    -c https://raw.githubusercontent.com/devnied/Openshift-Newrelic-Java-Cartridge/master/metadata/manifest.yml
+  rhc env-set JAVA_OPTS_EXT="-javaagent:${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.jar" -a <your_app_name>
 ```
 
 - Restart your application.
@@ -36,8 +37,3 @@ Remove
 ```
   rhc cartridge-remove newrelic -a <your_app_name>
 ```
-
-Known Issues
-------------
-
-* A **JAVA\_OPTS\_EXT** user defined environment variable will override the one defined by the cartridge, so you could inadvertently disable the agent. Since the New Relic for Java agent requires a JVM flag to be written to your JAVA\_OPTS\_EXT a backup of this file is written to your newrelic directory and then moved into place again on teardown. To add extra JVM arguments to your startup, you should echo them into the file  echo "my:jvm-argument" >> ${OPENSHIFT\_HOMEDIR}.env/user_vars/JAVA\_OPTS\_EXT" Any arguments which were added after this cartridge is installed, will need to be added again if the cartridge is removed. 
