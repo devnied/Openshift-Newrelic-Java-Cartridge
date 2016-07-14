@@ -8,7 +8,7 @@ Cartridge-Vendor: devnied
 Display-Name: New Relic Agent
 Description: The New Relic client connects to your New Relic account and publish
   metrics for your application.
-Version: '3.28.0'
+Version: '3.30.0'
 License: New Relic
 License-Url: https://docs.newrelic.com/docs/licenses/licenses
 Vendor: New Relic
