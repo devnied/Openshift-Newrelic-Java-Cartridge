@@ -17,6 +17,8 @@ sed -i "s/My Application/${OPENSHIFT_APP_NAME}/g" "${OPENSHIFT_NEWRELIC_DIR}newr
 
 sed -i "s/ignore_status_codes: 404/ignore_status_codes: 404,401/g" "${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.yml"
 
+sed -i "s/#include:/include: request.parameters.*/g" "${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.yml"
+
 mkdir -p ${OPENSHIFT_NEWRELIC_DIR}/logs
 
 client_message "The New Relic Java agent has been installed. Please restart your application with the command    rhc app restart ${OPENSHIFT_APP_NAME}"
