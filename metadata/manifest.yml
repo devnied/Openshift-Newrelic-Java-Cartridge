@@ -1,14 +1,14 @@
 ---
 Name: newrelic-agent
 Cartridge-Short-Name: NEWRELIC
-Cartridge-Version: '1.0.0'
+Cartridge-Version: '1.1.0'
 Compatible-Versions:
-  - '1.0.0'
+  - '1.1.0'
 Cartridge-Vendor: devnied
 Display-Name: New Relic Agent
 Description: The New Relic client connects to your New Relic account and publish
   metrics for your application.
-Version: '3.30.0'
+Version: '3.33.0'
 License: New Relic
 License-Url: https://docs.newrelic.com/docs/licenses/licenses
 Vendor: New Relic
