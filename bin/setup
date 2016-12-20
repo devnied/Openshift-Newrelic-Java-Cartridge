@@ -15,8 +15,6 @@ sed -i "s/'<%= license_key %>'/${OPENSHIFT_NEWRELIC_LICENSE_KEY}/g" "${OPENSHIFT
 
 sed -i "s/My Application/${OPENSHIFT_APP_NAME}/g" "${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.yml"
 
-sed -i "s/ignore_status_codes: 404/ignore_status_codes: 404,401/g" "${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.yml"
-
 sed -i "s/#include:/include: request.parameters.*/g" "${OPENSHIFT_NEWRELIC_DIR}newrelic/newrelic.yml"
 
 mkdir -p ${OPENSHIFT_NEWRELIC_DIR}/logs
